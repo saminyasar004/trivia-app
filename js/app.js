@@ -55,7 +55,7 @@ function startCountdown() {
     return (intervalId = setInterval(() => {
         if (currentTime > 0) {
             currentWidth -= 100 / totalTime; // * get the percentage of total time and decrease it every interval
-            if (currentTime <= 5) {
+            if (currentTime <= 10) {
                 countdownTimeBar.style.background = `linear-gradient(270deg,#ff8271,#ff523b)`;
             }
             countdownTimeBar.style.width = `${
