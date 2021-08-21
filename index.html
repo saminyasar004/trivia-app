@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trivia App</title>
+        <!-- linking favicon icon -->
+        <link
+            rel="shortcut icon"
+            href="./img/favicon.ico"
+            type="image/x-icon"
+        />
+        <!-- linking Rboto font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- linking font awesome -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <!-- linking custom stylesheet -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- linking javascript -->
+        <script src="./js/app.js" defer></script>
+    </head>
+    <body>
+        <!-- quiz section start -->
+
+        <section class="quiz-section">
+            <div class="row quiz-heading">
+                <h1>This Trivia is About: <span id="quizTopicSpan"></span></h1>
+            </div>
+            <div class="row quiz-container">
+                <div class="quiz-result">
+                    <div class="quiz-text">
+                        <div id="quizNumberEl" class="quiz-number">
+                            <!-- <h3>#450 <span>of 1120</span></h3> -->
+                        </div>
+                        <div class="quiz-correction">
+                            <div class="quiz-incorrect">
+                                <i class="fa fa-times-circle"></i>
+                                <span id="quizIncorrectSpan"></span>
+                            </div>
+                            <div class="quiz-correct">
+                                <i class="fa fa-check-circle"></i>
+                                <span id="quizCorrectSpan"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz-bar">
+                        <div id="countdownTimeBar" class="bar"></div>
+                    </div>
+                </div>
+                <div class="quiz-question">
+                    <h2 id="quizQuestionEl"></h2>
+                    <div class="quiz-options">
+                        <ul id="quizOptionListEl">
+                            <!-- <li>
+                                <h3>a</h3>
+                                <p>ryan dahl</p>
+                            </li>
+                            <li>
+                                <h3>b</h3>
+                                <p>brendan eich</p>
+                            </li>
+                            <li>
+                                <h3>c</h3>
+                                <p>evan you</p>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div id="quizControls" class="quiz-controls">
+                    <!-- <button class="btn btn-option">a</button>
+                    <button class="btn btn-option">b</button>
+                    <button class="btn btn-option">c</button>
+                    <button class="btn btn-option">d</button> -->
+                    <!-- <button id="btnNext" class="btn btn-next">
+                        <i class="fa fa-share"></i>
+                    </button> -->
+                </div>
+            </div>
+            <div class="row author-container">
+                <p class="author-text">
+                    build with 💜 by
+                    <a target="_blank" href="https://saminyasar.netlify.app/"
+                        >samin yasar</a
+                    >
+                </p>
+            </div>
+        </section>
+
+        <!-- quiz section end -->
+    </body>
+</html>
