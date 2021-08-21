@@ -33,6 +33,6 @@ This `Trivia App` will generate some questions about a bunch of random topic fro
 
 ## **Live Preview**
 
-[Trivia App](https:https://triviaapp.netlify.app/ "Trivia App")
+[Trivia App](https://triviaapp.vercel.app/ "Trivia App")
 
 ### Happy Coding 🚀
