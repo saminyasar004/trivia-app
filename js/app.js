@@ -37,11 +37,16 @@ const quizCategories = {
     animals: 27,
     gadgets: 30,
 };
+
 const quizTopic =
     Object.keys(quizCategories)[
         Math.floor(Math.random() * Object.keys(quizCategories).length)
     ];
+
 const quizCategoryId = quizCategories[quizTopic];
+const quizDifficulties = ["easy", "medium", "hard"];
+const quizDifficulty =
+    quizDifficulties[Math.floor(Math.random() * quizDifficulties.length)];
 
 const API_URL = `https://opentdb.com/api.php?amount=${quizAmount}&category=${quizCategoryId}`;
 
